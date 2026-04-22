@@ -7,8 +7,8 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     proxy: {
-  '/api':     { target: 'https://stockscan-backend.onrender.com', changeOrigin: true },
-  '/uploads': { target: 'https://stockscan-backend.onrender.com', changeOrigin: true },
-},
+      '/api':     { target: 'https://craftribe-inventory-tracker.onrender.com', changeOrigin: true },
+      '/uploads': { target: 'https://craftribe-inventory-tracker.onrender.com', changeOrigin: true },
+    },
   },
 })
