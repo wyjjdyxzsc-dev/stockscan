@@ -17,9 +17,10 @@ ALLOWED_EXT    = {"jpg", "jpeg", "png", "gif", "webp"}
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 app = FastAPI(title="Craftribe Inventory Tracker API", version="1.0.0")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
